@@ -2,10 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/:action', function(req, res, next) {
+
+    var action = req.params.action;
+
     res.json({
         confirmation: 'Success',
-        message: 'It worked!!',
+        message: action,
     });
 });
 
