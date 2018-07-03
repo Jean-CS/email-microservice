@@ -20,7 +20,7 @@ router.get('/:action', function (req, res, next) {
         message: 'Invalid action'
     });
 
-
+    
 });
 
 module.exports = router;
